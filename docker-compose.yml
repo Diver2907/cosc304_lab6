@@ -5,12 +5,12 @@ services:
         container_name: cosc304-mysql
         restart: always
         environment:
-            MYSQL_DATABASE: 'testuser'
+            MYSQL_DATABASE: 'enroll'
             MYSQL_USER: 'testuser'
             MYSQL_PASSWORD: '304testpw'            
             MYSQL_ROOT_PASSWORD: '304rootpw'
         ports:
-            - '3307:3306'
+            - '3307:3307'
         expose:
             - '3306'   
         volumes:
